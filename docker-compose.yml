@@ -1,0 +1,11 @@
+photo-gallery-admin-service:
+    image: photo-gallery-admin
+    ports:
+        - 7070:8000
+    volumes:
+        - ./app:/project/app
+        - ./routes:/project/routes
+        - ./resources:/project/resources
+        - ./database:/project/database
+        - ./config:/project/config
+        - ./.env:/project/.env
